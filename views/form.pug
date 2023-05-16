@@ -1,0 +1,15 @@
+extends layout 
+
+block content 
+
+    .form-container
+        h1 Create new messages
+
+        form(method="POST" action="/new")
+            label(for="user") User 
+            input(type="text" name="user" id="user")
+
+            label(for="text") Message 
+            textarea( cols="30", rows="2" name="text" id="text")
+    
+            button(type="submit") Add message
